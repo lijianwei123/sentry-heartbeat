@@ -14,12 +14,8 @@
 - 引用jar
 
 - 配置
-```
-spring mvc 需要在spring mvc容器的配置文件加上
-<bean class="com.ggj.platform.sentry.heartbeat.HealthUrlConfig"/>
-
-spring boot 不需要配置, 会自动加载配置
-```
+      - spring mvc 需要在spring mvc容器的配置文件加上;<bean class="com.ggj.platform.sentry.heartbeat.HealthUrlConfig"/>
+      - spring boot 不需要配置, 会自动加载配置
 
 - 会自动配置三个接口, 仅限本地调用
 
@@ -35,7 +31,7 @@ spring boot 不需要配置, 会自动加载配置
 
 > 先调用下线接口->sleep slb能够检测异常间隔时间->关闭应用、删除status文件->发布应用
 
-->调用心跳检测接口 验证应用功能完整->sleep slb能够检测应用正常间隔时间->发布成功
+> ->调用心跳检测接口 验证应用功能完整->sleep slb能够检测应用正常间隔时间->发布成功
 
  
 
