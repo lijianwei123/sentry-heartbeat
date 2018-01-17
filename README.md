@@ -14,6 +14,7 @@
 - 引用jar
 
 - 配置
+
 spring mvc 需要在spring mvc容器的配置文件加上
 <bean class="com.ggj.platform.sentry.heartbeat.HealthUrlConfig"/>
 
