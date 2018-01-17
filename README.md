@@ -14,12 +14,13 @@
 - 引用jar
 
 - 配置
-
+```
 spring mvc 需要在spring mvc容器的配置文件加上
 <bean class="com.ggj.platform.sentry.heartbeat.HealthUrlConfig"/>
 
 spring boot 不需要配置, 会自动加载配置
- 
+```
+
 - 会自动配置三个接口, 仅限本地调用
 
 http://127.0.0.1:port/health/check  心跳检测，配置在slb, 或者jenkis发布成功之后检测应用功能完整(容器完全加载后才会认为功能完整)
