@@ -23,7 +23,7 @@ spring boot 不需要配置, 会自动加载配置
 
 - 会自动配置三个接口, 仅限本地调用
 
-http://127.0.0.1:port/health/check  心跳检测，配置在slb, 或者jenkis发布成功之后检测应用功能完整(容器完全加载后才会认为功能完整)
+      - http://127.0.0.1:port/health/check  心跳检测，配置在slb, 或者jenkis发布成功之后检测应用功能完整(容器完全加载后才会认为功能完整)
 http://127.0.0.1:port/health/online 上线，心跳恢复健康
 http://127.0.0.1:port/health/offline 下线 心跳异常
 同时应用启动之后 新建 /data/proc/应用名(app.name)/status 文件，同时文件修改时间更新为当前时间
